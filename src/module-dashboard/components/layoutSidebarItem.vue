@@ -106,9 +106,6 @@ export default {
       default: false
     }
   },
-  mounted(){
-    console.log(this.routes,'routes')
-  },
   methods: {
     handleOpen(key, keyPath) {
       console.log(key, keyPath);

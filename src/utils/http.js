@@ -39,8 +39,7 @@ axios.interceptors.request.use(
 
 axios.interceptors.response.use(
   function(response) {
-    console.log(response,'response')
-    if (response.data.code == '100001') {
+    if (response.data.code == '400') {
       router.push({
         path: '/login',
       });
@@ -57,7 +56,7 @@ axios.interceptors.response.use(
         type: 'error'
       })
       router.push('/pendingTask')
-    } else if (response.data.code !== '000000' && response.data.code !== '400000') {
+    } else if (response.data.code !== '200' && response.data.code !== '400') {
       Message({
         //  饿了么的消息弹窗组件
         showClose: true,
@@ -81,16 +80,18 @@ axios.interceptors.response.use(
 
 
 export default {
-  baseURL: 'http://81.70.42.249:6004',
-  get(url, params) {
+  baseURL: 'http://81.70.42.249:6003',
+  get(url) {
     return axios.get(this.linkUrl(url), {
-        params: params,
         headers: {
           Pragma: 'no-cache',
+          token: 'c62a34d2f3b946fdb80b426194c2e234'
         },
       })
       .then(function(response) {
-        return response;
+        return new Promise((resolve) => {resolve(response)});
+    }).catch((e)=>{
+      return e;
     });
   },
   post(url, data) {

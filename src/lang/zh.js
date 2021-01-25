@@ -87,13 +87,16 @@ export default {
     delete: '删除',
     cancel: '取 消',
     confirm: '确 定',
-    operationType: '操作类型',
     operationDate: '操作时间',
     date: '日期',
-    operator: '操作人',
-    results: '执行结果',
-    describe: '描述',
-    preserve: '保存',
-    signOut: '退出'
+    signOut: '退出',
+    itemCode: '2020年-2021年执行项目',
+    spec: 'Tier1生态sdk适配',
+    cardCode: '系统评估自检测试',
+    itemName: '定制开发',
+    itmsGrpNam: '系统侧准入测试',
+    itmsGrpCod: '腾讯验收结果,交付',
+    prchseItem: 'bug复盘阶段',
+    sellItem: '量产'
   }
 }

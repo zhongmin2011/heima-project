@@ -66,15 +66,15 @@ export default {
     };
   },
   methods: {
-    getList() {
-      Api.get("/ava/edi/sap/v1/salecorder").then((res) => {
-        this.dataList = res.data.data;
-      });
-    },
+    // getList() {
+    //   Api.get("/ava/edi/sap/v1/salecorder").then((res) => {
+    //     this.dataList = res.data.data;
+    //   });
+    // },
 
     remove(id) {
       //括号内要接收上面props.row.id传来的id值
-      shanchu({ id: id }).then((res) => {
+      shanchu({ id: id }).then(res => {
         console.log(res.data);
         this.getList();
       });
