@@ -18,7 +18,7 @@
           <span v-if="item.meta && item.meta.title">{{item.meta.title}}</span>
         
           <template v-for="child in item.children" v-if="item.children.length !== 0">
-            <sidebar-item :is-nest="true" v-if="child.children && child.children.length > 0" :routes="[child]" :key="child.path" style="border:2px red solid;"></sidebar-item>
+            <sidebar-item :is-nest="true" v-if="child.children && child.children.length > 0" :routes="[child]" :key="child.path"></sidebar-item>
 
             <router-link :to="item.path+'/'+child.path" :key="child.name">
               <el-menu-item :index="item.path+'/'+child.path">

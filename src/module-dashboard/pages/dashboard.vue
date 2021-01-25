@@ -1,5 +1,5 @@
 <template>
-  <div class="dashboard-container" style="border:3px red solid;">
+  <div class="dashboard-container">
       <!-- 腾讯qq页面 -->
     <el-card class="sales-card">
       <div class="clearfix">

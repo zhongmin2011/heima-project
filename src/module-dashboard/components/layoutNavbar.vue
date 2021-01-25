@@ -1,5 +1,5 @@
 <template>
-  <el-menu class="navbar" mode="horizontal"  style="border:1px red solid;">
+  <el-menu class="navbar" mode="horizontal">
     <hamburger class="hamburger-container" :toggleClick="toggleSideBar" :isActive="sidebar.opened"></hamburger>
 
     <breadcrumb class="breadcrumb-container"></breadcrumb>
