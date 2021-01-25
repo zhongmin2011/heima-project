@@ -2,28 +2,28 @@
   <div class="login-container">
     <el-form class="login-form" autoComplete="on" :model="loginForm" :rules="loginRules" ref="loginForm" label-position="left">
       <div class="title-container">
-        <h3 class="title"><img src="./../assets/login-logo.png"></h3>
+        <h3 class="title"><img src="./../assets/01.png"></h3>
       </div>
-      <el-form-item prop="username">
+     <el-form-item prop="username">
         <span class="svg-container svg-container_login">
           <svg-icon icon-class="user" />
         </span>
-        <el-input name="username" type="text" v-model="loginForm.userName" autoComplete="on" placeholder="username" />
+        <el-input name="username" type="text" v-model="loginForm.username" autoComplete="on" placeholder="username" />
       </el-form-item>
 
       <el-form-item prop="password">
         <span class="svg-container">
           <svg-icon icon-class="password" />
         </span>
-        <el-input name="password" :type="passwordType" @keyup.enter.native="handleLogin" v-model="loginForm.passWord" autoComplete="on" placeholder="password" />
-        <span class="show-pwd" @click="showPwd">
+        <el-input name="password" :type="passwordType" @keyup.enter.native="handleLogin"  autoComplete="on" placeholder="password" />
+        <span class="show-pwd" @click="showPwd"><!--v-model="loginForm.password"-->
           <svg-icon icon-class="eye" />
         </span>
       </el-form-item>
 
       <el-button class="loginBtn" type="primary" style="width:100%;margin-bottom:30px;" :loading="loading" @click.native.prevent="handleLogin">{{$t('login.logIn')}}</el-button>
       <div class="regInfo"><router-link :to="{'path':'/reg'}">还没有账号？立即注册</router-link></div>
-      <div class="tips">
+      <div class="tips"  v-if="flag">
         <span>账号: <br>18636825185 (SaaS管理员)<br>
          <!-- CompanyAdmin (企业管理员) <br>CompanyUser (企业用户)<br> -->
          </span>
@@ -76,10 +76,10 @@ export default {
     }
     return {
       loginForm: {
-        // userName: 'sense.gong',
-        // passWord: '123456'
-        username: '13800138003',
-        password: '1234561'
+         username: 'sense.gong',
+         password: '123456'
+        // username: '13800138003',
+        // password: '1234561'
       },
       loginRules: {
         userName: [
@@ -200,7 +200,7 @@ $light_gray: #eee;
   position: fixed;
   height: 100%;
   width: 100%;
-  background: url(./../assets/login.jpg) 50% 50% no-repeat;
+  background: url(./../assets/qqw.jpg) 50% 50% no-repeat;
   .login-form {
     position: absolute;
     top: 50%;
@@ -276,5 +276,12 @@ $light_gray: #eee;
   text-align: center;
   color: #fff;
   font-size: 16px;
+}
+
+img {
+    border-style: none;
+    width: 606px;
+    margin-left: -66px;
+
 }
 </style>

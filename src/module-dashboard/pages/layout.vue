@@ -7,7 +7,7 @@
 			<layout-app-main></layout-app-main>
       <div class="bottom">
         <p>
-          <a href="https://github.com/itheima2017/vue-element-admin-itheima" target="_blank">
+          <a href="http://39.106.248.11:8082/ava/edi/sap/v1/salesorder" target="_blank">
             <svg-icon icon-class="github"></svg-icon>
           </a>
         </p>

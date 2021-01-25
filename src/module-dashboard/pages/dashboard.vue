@@ -1,5 +1,6 @@
 <template>
-  <div class="dashboard-container">
+  <div class="dashboard-container" style="border:3px red solid;">
+      <!-- 腾讯qq页面 -->
     <el-card class="sales-card">
       <div class="clearfix">
         <div class='fl headL'>
@@ -27,17 +28,20 @@
         </div>
       </div>
     </el-card>
+
     <div style="margin-top:20px;" class="clearfix">
       <div style="width:55%; float:left">
+        <!-- 日历 -->
         <el-card class="box-card">
-            <div slot="header" class="header">
-              <span>工作日历</span>
-            </div>
-            <div class="total">
-              <DateIndex />
-            </div>
-          </el-card>
-          <el-card style="margin-top:20px;">
+          <div slot="header" class="header">
+            <span>工作日历</span>
+          </div>
+          <div class="total">
+            <DateIndex />
+          </div>
+        </el-card>
+        <!-- 快速开始/便捷导航 -->
+        <el-card style="margin-top:20px;">
             <div class="advContent">
               <div class="title">
                 公告
@@ -56,12 +60,12 @@
                     </router-link>
                   </li>
                 </ul> -->
-                <ul class="noticeList">
+                    <ul class="noticeList">
                   <li>
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div>
-                          <p><span class="col">宫宝华</span> 发布了 第一期“腾讯可视化”数据平台展示管理中心</p>
+                          <p><span class="col">sense</span> 发布了 第一期“腾讯可视化”数据平台展示管理中心</p>
                           <p>2021-01-11 10:21:38</p>
                         </div>
                       </div>
@@ -70,8 +74,8 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div v-if="flag">
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
-                          <p>2018-07-21 15:21:38</p>
+                          <p><span class="col">sense</span> 发布了 第二期“</p>
+                          <p>2021-07-21 15:21:38</p>
                         </div>
                       </div>
                   </li>
@@ -79,8 +83,8 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div v-if="flag">
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
-                          <p>2018-07-21 15:21:38</p>
+                          <p><span class="col">sense</span> 发布了 第二期“</p>
+                          <p>2021-07-21 15:21:38</p>
                         </div>
                       </div>
                   </li>
@@ -88,8 +92,8 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div v-if="flag">
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
-                          <p>2018-07-21 15:21:38</p>
+                          <p><span class="col">sense</span> 发布了 第二十期“</p>
+                          <p>2021-07-21 15:21:38</p>
                         </div>
                       </div>
                   </li>
@@ -97,8 +101,8 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div v-if="flag">
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
-                          <p>2018-07-21 15:21:38</p>
+                          <p><span class="col">sense</span> 发布了 第十期“</p>
+                          <p>2021-01-21 15:21:38</p>
                         </div>
                       </div>
                   </li>
@@ -106,7 +110,7 @@
                     <div class="item">
                         <img  src="./../../assets/img.jpeg" alt="">
                         <div v-if="flag">
-                          <p><span class="col">朱继柳</span> 发布了 第二十期“传智大讲堂”互动讨论获奖名单公布</p>
+                          <p><span class="col">sense</span> 发布了 第二十期“</p>
                           <p>2018-07-21 15:21:38</p>
                         </div>
                       </div>
