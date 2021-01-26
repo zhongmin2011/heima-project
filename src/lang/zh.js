@@ -90,12 +90,12 @@ export default {
     operationDate: '操作时间',
     date: '日期',
     signOut: '退出',
-    itemCode: '2020年-2021年执行项目',
+    itemCode: '2020-2021年执行项目',
     spec: 'Tier1生态sdk适配',
     cardCode: '系统评估自检测试',
     itemName: '定制开发',
     itmsGrpNam: '系统侧准入测试',
-    itmsGrpCod: '腾讯验收结果,交付',
+    itmsGrpCod: '腾讯验收结果',
     prchseItem: 'bug复盘阶段',
     sellItem: '量产'
   }

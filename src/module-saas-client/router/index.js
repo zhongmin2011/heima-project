@@ -1,9 +1,9 @@
 /*
- * @Author: itcast 
+ * @Author: sense 
  * @Description: xxx业务模块 
- * @Date: 2018-04-13 16:13:27 
+ * @Date: 2021-04-13 16:13:27 
  * @Last Modified by: hans.taozhiwei
- * @Last Modified time: 2018-09-03 11:12:47
+ * @Last Modified time: 2021-04-13 16:15:04
  */
 
 import Layout from '@/module-dashboard/pages/layout'
@@ -17,33 +17,33 @@ export default [
     redirect: 'noredirect',
     name: 'saas-clients',
     meta: {
-      title: '企业管理',
+      title: 'udf1',
       icon: 'component'
     },
     children: [
       {
         path: 'client',
-        component: _import('saas-client/pages/index'),
+        component: _import('saas-client/pages/udf'),
         name: 'saas-clients-index',
-        meta: {title: '企业管理', icon: 'component', noCache: true}
+        meta: {title: 'udf2', icon: 'component', noCache: true}
       },
       {
         path: 'xinzeng',
-        component: _import('saas-client/pages/xinzeng'),
+        component: _import('saas-client/pages/udf'),
         name: 'saas-clients-xinzeng',
-        meta: {title: '信息录入', icon: 'component', noCache: true}
+        meta: {title: 'udf3', icon: 'component', noCache: true}
       },
       {
         path: 'detailed/:id',
-        component: _import('saas-client/pages/detailed'),
+        component: _import('saas-client/pages/udf'),
         name: 'saas-clients-detailed',
-        meta: {title: '企业管理详情', icon: 'component', noCache: true}
+        meta: {title: 'udf4', icon: 'component', noCache: true}
       },
       {
         path: 'update/:id',
         component: _import('saas-client/pages/update'),
         name: 'saas-clients-update',
-        meta: {title: '企业管理修改', icon: 'component', noCache: true}
+        meta: {title: 'udf5', icon: 'component', noCache: true}
       }
     ]
     

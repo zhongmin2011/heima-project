@@ -4,10 +4,10 @@ export default {
         "success" : true,
         "message" : "登录成功",
         "data" : {
-            mobile:"138000138000",
-            username:"张三",
-            company:"江苏传智播客教育科技股份有限公司12345678",
-            email:"bipeng@itcast.cn",
+            mobile:"18845560483",
+            username:"sense",
+            company:"北京腾讯总部",
+            email:"zzf3066@tencent.com",
         }
     }
 }

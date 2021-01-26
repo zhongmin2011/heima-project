@@ -1,9 +1,9 @@
 /*
- * @Author: itcast 
+ * @Author: sense 
  * @Description: xxx业务模块 
- * @Date: 2018-04-13 16:13:27 
+ * @Date: 2021-04-13 16:13:27 
  * @Last Modified by: hans.taozhiwei
- * @Last Modified time: 2018-09-03 11:12:47
+ * @Last Modified time: 2021-04-13 16:15:04
  */
 
 import Layout from '@/module-dashboard/pages/layout'
@@ -17,7 +17,7 @@ export default [
     redirect: 'noredirect',
     name: 'saas-clients',
     meta: {
-      title: '车机模式',
+      title: '数据中心',
       icon: 'component'
     },
     children: [
@@ -25,13 +25,13 @@ export default [
         path: 'index',
         component: _import('demo/pages/index'),
         name: 'demo',
-        meta: {title: 'PAL', icon: 'component', noCache: true},
+        meta: {title: '车机模块', icon: 'component', noCache: true},
         children: [
           {
             path: 'index',
             component: _import('demo/pages/index'),
             name: 'demo',
-            meta: {title: 'SSA', icon: 'component', noCache: true},
+            meta: {title: 'KPI', icon: 'component', noCache: true},
           }
         ]
       }
