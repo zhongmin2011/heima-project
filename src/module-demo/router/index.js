@@ -32,7 +32,14 @@ export default [
             component: _import('demo/pages/index'),
             name: 'demo',
             meta: {title: 'KPI', icon: 'component', noCache: true},
-          }
+          },
+          // {
+          //   path: 'detail',
+          //   component: _import('demo/pages/detail'),
+          //   name: 'demo',
+          //   meta: {title: '详情页', icon: 'component', noCache: true},
+          //   hidden: true
+          // }
         ]
       }
     ]

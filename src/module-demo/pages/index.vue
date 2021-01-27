@@ -21,7 +21,8 @@
           </el-table-column>
           <el-table-column align="center" :label="$t('table.itemName')">
             <template slot-scope="scope">
-              <span>{{scope.row.itemName}}</span>
+              <span :class="{'prossBtn': scope.row.itemName == '完成'}" @click="prossDetail(scope.row)">{{scope.row.itemName}}</span>
+              <!-- <span v-else>{{scope.row.itemName}}1</span> -->
             </template>
           </el-table-column>
           <el-table-column align="center" :label="$t('table.itmsGrpNam')">
@@ -48,17 +49,24 @@
         <!-- end -->
       </el-card>
      </div>
+     <Detail v-if="isShowDetail" class="detail" @close="closeDateil" :rowDatail="rowDatail"></Detail>
   </div>
 </template>
 
 <script>
+import Detail from './detail'
 import {getList} from '@/utils/http.js'
 import Api from '@/utils/http.js'
 export default {
   name: 'saas-clients-table-index',
+  components:{
+    Detail
+  },
   data() {
     return {
-      dataList: []
+      isShowDetail:false,
+      dataList: [],
+      rowDatail: {}
     }
   },
   methods: {
@@ -69,6 +77,15 @@ export default {
           this.dataList = res.data;
         }
      })
+    },
+    prossDetail(value){
+      if(value.itemName == '完成'){
+        this.rowDatail = value
+        this.isShowDetail = true
+      }
+    },
+    closeDateil(){
+      this.isShowDetail = false
     }
   },
   // 创建完毕状态
@@ -86,4 +103,11 @@ export default {
   margin-top: 10px;
   text-align: right;
 }
+.prossBtn{
+  padding: 4px 6px;
+  background-color: rgb(95, 143, 255);
+  color: white;
+  border-radius: 2px;
+}
+
 </style>
